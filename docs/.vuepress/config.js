@@ -14,18 +14,20 @@ module.exports = {
       md.use(require('markdown-it-emoji'));
     }
   },
-  plugins: [
-    '@vuepress/last-updated',
-    '@vuepress/register-components',
-    '@vuepress/search',
-    '@vuepress/medium-zoom',
-    '@vuepress/nprogress',
-    'git-log',
-    {
+  plugins: {
+    '@vuepress/last-updated': {},
+    '@vuepress/register-components': {},
+    '@vuepress/search': {},
+    '@vuepress/medium-zoom': {
+      options: {
+        background: '#222'
+      }
+    },
+    'git-log': {
       additionalArgs: '--no-merge',
       onlyFirstAndLastCommit: true
     }
-  ],
+  },
   theme: 'yuu',
   themeConfig: {
     displayAllheaders: true,

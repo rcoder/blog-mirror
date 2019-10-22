@@ -2,4 +2,4 @@
 
 ## reputation and data ownership
 
-* [comments](comments)
+* [on comments](comments.md)

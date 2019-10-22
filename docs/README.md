@@ -11,9 +11,7 @@ Taking nine months off of work and just wandering a safe, technical slice of the
 
 Those Platonic ideas range from dWeb + distributed social network tech, to mostly-off-the-grid connectivity, to really simple tools for busy families, teams, groups of friends, and volunteers to stay in touch and share information without signing over their entire lives to google or facebook. Email had a good run but never really caught up to mobile devices; mobile messaging tools don't degrade down to the point where your grumpy uncle from Florida is going to both to learn to use it just to help coordinate who's bringing silverware to the family reunion.
 
-Some of the buzz of discovery has come from finally getting to dig into how the cool kids are building websites these days (typescript, headless and git-backend content stores, reactive components) and just how functional programming really does seem to be eating the world. In the varied forms of Elm, F#/ReasonML, the Type- parts of TypeScript, Elixir, and Rust, there's more than one really compelling place to apply FP where the rubber hits the road in an online business or community.
-
-Rust also deserves special notice as the OMG-fast-but-strangely-pure "functional assembler" that make WASM and high-overhead "micro VM" and container runtimes worth spinning up for blobs of code that largely get restricted to working on numbers and byte streams.
+Some of the buzz of discovery has come from finally getting to dig into how the cool kids are building websites these days (TypeScript, headless and git-backend content stores, reactive components) and just how functional programming really does seem to be eating the world.
 
 I've also been digging in to hardware hacking of a very light, superficial sort for the first time in many years. I've repaired a lovely old Mac SE/30 (which I broke in the first place, after scoring off eBay from a methodical restorer of vintage Macs), built a few single-board computer appliances (IR security camera, home backup/NAS/media server), dipped toes in the deep waters of software-defined radio and LoRa, and banged out C++ and Python code to run on tiny, cheap microcontrollers.
 
