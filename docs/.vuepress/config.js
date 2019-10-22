@@ -15,7 +15,6 @@ module.exports = {
     }
   },
   plugins: [
-    '@vuepress/back-to-top',
     '@vuepress/last-updated',
     '@vuepress/register-components',
     '@vuepress/search',
@@ -48,12 +47,6 @@ module.exports = {
       '/ideas/',
       '/code/',
       '/media/',
-    ],
-    yuu: {
-      defaultDarkTheme: true,
-      colorThemes: ['blue', 'red'],
-      defaultColorTheme: 'default',
-      disableThemeIgnore: true
-    }
+    ]
   },
 }

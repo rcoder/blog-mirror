@@ -1,7 +1,5 @@
 # home
 
-hello! welcome to my weird little website.
-
 > "luck looks a lot like skill when you're in the act"
 > (aaron s., mid-way through a four-hour tabletop rpg session)
 

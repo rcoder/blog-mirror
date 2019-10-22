@@ -2,5 +2,16 @@
   font-family: 'Cascadia'
   src: url('/Cascadia.ttf')
 
-body
+defaultFont()
   font-family: 'Cascadia', 'Inconsolata', 'Noto Sans Mono', 'Droid Sans Mono', 'Monaco', monospace
+
+body
+  defaultFont()
+
+pre
+  defaultFont()
+
+pre.info {
+  font-size: smaller;
+  text-align: right;
+}
