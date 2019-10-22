@@ -2,7 +2,8 @@
 
 ## photography
 
-![me](/images/photoroll/DSCF0779.jpg)
-![mood](/images/photoroll/DSCF0719.jpg)
+* [recent b/w experiments](recent-bw.md)
 
-## audio experiments
+## audio
+
+* binaural recordings

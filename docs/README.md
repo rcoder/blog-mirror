@@ -1,11 +1,16 @@
-# home
+# bc8
 
-> "luck looks a lot like skill when you're in the act"
-> (aaron s., mid-way through a four-hour tabletop rpg session)
+This site is a sandbox for personal Internet experiments.
+
+## start here
+
+* [ideas](/ideas)
+* [code](/code)
 
 ## about
 
-*this is a sandbox for internet experiments*
+> "luck looks a lot like skill when you're in the act"
+> (aaron s., mid-way through a four-hour tabletop rpg session)
 
 Taking nine months off of work and just wandering a safe, technical slice of the internet hacking on whatever seems appealing at the moment has made me start to compulsively toss off little scripts and dead-end skeletons of HTML that all maybe point towards some set of better, cooler ideas.
 
@@ -15,4 +20,4 @@ Some of the buzz of discovery has come from finally getting to dig into how the 
 
 I've also been digging in to hardware hacking of a very light, superficial sort for the first time in many years. I've repaired a lovely old Mac SE/30 (which I broke in the first place, after scoring off eBay from a methodical restorer of vintage Macs), built a few single-board computer appliances (IR security camera, home backup/NAS/media server), dipped toes in the deep waters of software-defined radio and LoRa, and banged out C++ and Python code to run on tiny, cheap microcontrollers.
 
-Since most of these experiments really do tend to trail off into nothing rather than representing a polished end-produce, I'm going to use this dedicated site to share short snippets of code, dreams of design docs, and maybe even some of my truly exerable attempts at hand-drawing UI wireframes.
+Since most of these experiments really do tend to trail off into nothing rather than representing a polished end-product, I'm going to use this site to share short snippets of code, sketches of design docs, and random sources of inspiration.

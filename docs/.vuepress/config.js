@@ -36,8 +36,8 @@ module.exports = {
     search: true,
     nav: [
       {
-        about: 'about',
-        link: '/about/',
+        text: 'home',
+        link: '/',
       },
       {
         text: 'contact',
@@ -49,6 +49,12 @@ module.exports = {
       '/ideas/',
       '/code/',
       '/media/',
-    ]
+    ],
+    yuu: {
+      colorThemes: ['red', 'blue'],
+      defaultColorTheme: 'red',
+      defaultDarkTheme: true,
+      disableIgnoreTheme: true,
+    }
   },
 }
