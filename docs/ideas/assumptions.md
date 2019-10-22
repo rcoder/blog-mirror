@@ -1,9 +1,9 @@
-# assumptions
+# Assumptions
 
-## general
+## General
 
 ![assumptions](/images/assumptions.png)
 
-## clients
+## Clients
 
 ![clients](/images/clients.png)

@@ -36,11 +36,11 @@ module.exports = {
     search: true,
     nav: [
       {
-        text: 'home',
+        text: 'Home',
         link: '/',
       },
       {
-        text: 'contact',
+        text: 'Contact',
         link: '/contact/',
       },
     ],

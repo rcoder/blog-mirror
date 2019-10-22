@@ -1,4 +1,4 @@
-# recent b/w experiments
+# Recent B/W experiments
 
 ![me](/images/photoroll/DSCF0779.jpg)
 ![kid](/images/photoroll/DSCF0752.jpg)

@@ -1,4 +1,4 @@
-# code
+# Code
 
 <Badge type="warn">coming soon!</Badge>
 

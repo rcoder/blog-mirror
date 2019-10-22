@@ -1,9 +1,9 @@
-# media
+# Media
 
-## photography
+## :camera: Photography
 
-* [recent b/w experiments](recent-bw.md)
+* [Recent B/W Experiments](recent-bw.md)
 
-## audio
+## :speaker: Audio
 
-* binaural recordings
+* Binaural Recordings

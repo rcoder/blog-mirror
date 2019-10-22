@@ -1,10 +1,10 @@
-# ideas
+# Ideas
 
-## interfaces
+## Interfaces
 
 * text is important
 
-## reputation and data ownership
+## Reputation and Data Ownership
 
 * [on comments](comments.md)
 * [some assumptions](assumptions.md)

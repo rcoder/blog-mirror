@@ -1,16 +1,17 @@
 ---
 home: true
+heroText: bc8.org
+tagline: A Sandbox for Personal Internet Experiments
 ---
 # bc8
 
-This site is a sandbox for personal Internet experiments.
+## Start Here
 
-## start here
+* [Ideas](/ideas)
+* [Code](/code)
+* [Media](/media)
 
-* [ideas](/ideas)
-* [code](/code)
-
-## about
+## About
 
 > "luck looks a lot like skill when you're in the act"
 > (aaron s., mid-way through a four-hour tabletop rpg session)
