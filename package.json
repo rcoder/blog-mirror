@@ -7,7 +7,7 @@
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
-    "docs:deploy": "ssh lennon@bc8.org mv /var/www/bc8/* ~/bc8-backup && scp -Cpr docs/.vuepress/dist/* lennon@bc8.org:/var/www/bc8"
+    "docs:deploy": "bash -c \"rsync -avz --delete-delay docs/.vuepress/dist/* lennon@bc8.org:/var/www/bc8\""
   },
   "dependencies": {
     "@vuepress/plugin-active-header-links": "^1.2.0",
