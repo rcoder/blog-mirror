@@ -7,9 +7,9 @@ footer: made with ♥ in pdx
 ---
 ## Start Here
 
-* [Ideas](/ideas)
-* [Code](/code)
-* [Media](/media)
+* [Ideas](ideas)
+* [Code](code)
+* [Media](media)
 
 ## About
 
