@@ -7,3 +7,4 @@
 ## reputation and data ownership
 
 * [on comments](comments.md)
+* [some assumptions](assumptions.md)

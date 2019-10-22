@@ -1,3 +1,6 @@
+---
+home: true
+---
 # bc8
 
 This site is a sandbox for personal Internet experiments.
