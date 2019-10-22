@@ -2,9 +2,9 @@
 home: true
 heroText: bc8.org
 tagline: A Sandbox for Personal Internet Experiments
----
-# bc8
 
+footer: made with ♥ in pdx
+---
 ## Start Here
 
 * [Ideas](/ideas)
@@ -13,15 +13,13 @@ tagline: A Sandbox for Personal Internet Experiments
 
 ## About
 
+Code is [MIT](https://opensource.org/licenses/MIT), words are [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/). Enjoy!
+
 > "luck looks a lot like skill when you're in the act"
 > (aaron s., mid-way through a four-hour tabletop rpg session)
 
-Taking nine months off of work and just wandering a safe, technical slice of the internet hacking on whatever seems appealing at the moment has made me start to compulsively toss off little scripts and dead-end skeletons of HTML that all maybe point towards some set of better, cooler ideas.
+This site came about because I spent quite a few months not working and taking care of myself and my family after a long stint in high-pressure startup-y jobs. During that time I came back to programming as a creative and intellectual outlet, rather than simply a means of making a living, and found it very much to my liking.
 
-Those Platonic ideas range from dWeb + distributed social network tech, to mostly-off-the-grid connectivity, to really simple tools for busy families, teams, groups of friends, and volunteers to stay in touch and share information without signing over their entire lives to google or facebook. Email had a good run but never really caught up to mobile devices; mobile messaging tools don't degrade down to the point where your grumpy uncle from Florida is going to both to learn to use it just to help coordinate who's bringing silverware to the family reunion.
+I've come across some really great ideas in that time: dWeb tech, off-the-grid connectivity, trustworthy and resilient communications, and others. I've added a few topics of my own to that queue (more soon!) and picked up a few useful new tools in the ol' programming toolbox (mainly modern web dev using TypeScript and headless and repo-backed content stores) and scribbled a lot of notes.
 
-Some of the buzz of discovery has come from finally getting to dig into how the cool kids are building websites these days (TypeScript, headless and git-backend content stores, reactive components) and just how functional programming really does seem to be eating the world.
-
-I've also been digging in to hardware hacking of a very light, superficial sort for the first time in many years. I've repaired a lovely old Mac SE/30 (which I broke in the first place, after scoring off eBay from a methodical restorer of vintage Macs), built a few single-board computer appliances (IR security camera, home backup/NAS/media server), dipped toes in the deep waters of software-defined radio and LoRa, and banged out C++ and Python code to run on tiny, cheap microcontrollers.
-
-Since most of these experiments really do tend to trail off into nothing rather than representing a polished end-product, I'm going to use this site to share short snippets of code, sketches of design docs, and random sources of inspiration.
+I'm going to try to collect some of those links, scribblings, and unfinished bits of code into a public notebook of sorts here.
