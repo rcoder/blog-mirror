@@ -13,6 +13,7 @@ export default {
   }
 }
 </script>
+
 <style lang="stylus">
 a.git-info:hover {
   font-family: 'Cascadia';

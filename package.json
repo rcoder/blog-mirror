@@ -10,6 +10,7 @@
     "docs:deploy": "bash -c \"rsync -avz --delete-delay docs/.vuepress/dist/* lennon@bc8.org:/var/www/bc8\""
   },
   "dependencies": {
+    "@types/node": "^12.11.5",
     "@vuepress/plugin-active-header-links": "^1.2.0",
     "@vuepress/plugin-back-to-top": "^1.2.0",
     "@vuepress/plugin-last-updated": "^1.2.0",
@@ -19,6 +20,8 @@
     "@vuepress/plugin-register-components": "^1.2.0",
     "@vuepress/plugin-search": "^1.2.0",
     "@vuepress/theme-default": "^1.2.0",
+    "fastify": "^2.10.0",
+    "fastify-sse": "^0.1.5",
     "js-yaml": "^3.13.1",
     "markdown-it-container": "^2.0.0",
     "markdown-it-emoji": "^1.4.0",

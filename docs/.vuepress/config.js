@@ -43,16 +43,15 @@ module.exports = {
         link: '/',
       },
       {
-        text: 'Contact',
-        link: '/contact/',
-      },
+        text: 'Who\'s Here?',
+        link: '/who/',
+      }
     ],
     sidebar: [
       '/',
       '/ideas/',
       '/code/',
       '/media/',
-      '/who/',
     ],
     yuu: {
       colorThemes: ['red', 'blue'],
