@@ -1,6 +1,7 @@
 module.exports = {
   title: 'bc8.org',
   decription: 'this is a sandbox for internet experiments',
+  port: process.env.PORT ? parseInt(process.env.PORT) : 8080,
   head: [
     [
       'link',
@@ -33,8 +34,7 @@ module.exports = {
     'git-log': {
       additionalArgs: '--no-merge',
       onlyFirstAndLastCommit: true
-    },
-    'persistence': {}
+    }
   },
   theme: 'yuu',
   themeConfig: {
