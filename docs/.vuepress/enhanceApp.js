@@ -1,5 +1,13 @@
-import Vuex from 'vuex'
+import Vuex from 'vuex';
+import VuexPersistence from 'vuex-persist';
 
-export default (Vue, options, router, siteData) => {
-  Vue.use(Vuex)
-}
+export default ({ Vue }) => Vue.use(Vuex, {
+  state: {
+    ident: {
+      publicKey: '',
+      alias: ''
+    },
+    messages: []
+  },
+  plugins: [new VuexPersistence().plugin]
+})

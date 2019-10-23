@@ -2,7 +2,10 @@ module.exports = {
   title: 'bc8.org',
   decription: 'this is a sandbox for internet experiments',
   head: [
-    ['link', { rel: 'license', href: 'http://creativecommons.org/licenses/by/4.0/' }],
+    [
+      'link',
+      { rel: 'license', href: 'http://creativecommons.org/licenses/by/4.0/' }
+    ],
     ['link', { rel: 'shortcut icon', href: '/images/logo.png' }]
   ],
   markdown: {
@@ -30,7 +33,8 @@ module.exports = {
     'git-log': {
       additionalArgs: '--no-merge',
       onlyFirstAndLastCommit: true
-    }
+    },
+    'persistence': {}
   },
   theme: 'yuu',
   themeConfig: {
@@ -41,24 +45,19 @@ module.exports = {
     nav: [
       {
         text: 'Home',
-        link: '/',
+        link: '/'
       },
       {
-        text: 'Who\'s Here?',
-        link: '/who/',
+        text: "Who's Here?",
+        link: '/who/'
       }
     ],
-    sidebar: [
-      '/',
-      '/ideas/',
-      '/code/',
-      '/media/',
-    ],
+    sidebar: ['/', '/ideas/', '/code/', '/media/'],
     yuu: {
       colorThemes: ['red', 'blue'],
       defaultColorTheme: 'red',
       defaultDarkTheme: true,
-      disableIgnoreTheme: true,
+      disableIgnoreTheme: true
     }
-  },
-}
+  }
+};
