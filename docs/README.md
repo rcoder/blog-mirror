@@ -1,6 +1,6 @@
 ---
 home: true
-tagline: "bc8.org: A Sandbox for Personal Internet Experiments"
+tagline: "A Sandbox for Personal Internet Experiments"
 
 footer: made with ♥ in pdx
 ---
