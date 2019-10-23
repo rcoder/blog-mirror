@@ -2,7 +2,7 @@
 
 ## Interfaces
 
-* text is important
+* text is important <Badge type="warn">coming soon!</Badge>
 
 ## Reputation and Data Ownership
 

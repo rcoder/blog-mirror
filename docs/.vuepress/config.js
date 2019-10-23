@@ -52,6 +52,7 @@ module.exports = {
       '/ideas/',
       '/code/',
       '/media/',
+      '/who/',
     ],
     yuu: {
       colorThemes: ['red', 'blue'],
