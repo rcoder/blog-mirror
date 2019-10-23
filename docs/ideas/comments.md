@@ -1,6 +1,6 @@
-# ideas: comments
+# Ideas: Online Comments
 
-## so what about comments?
+## So What About Comments?
 
 Comments are hard. I want to do them in a way I think is "right", which means quite a few things. First, users should own their content and be able to remove it or archive it without regard for your site's editorial policy. You don't have to _show_ it in your nice polite thread UI, but the comments still flow in and get recorded; they just age out of the thread cache unless someone bothers to engage.
 
