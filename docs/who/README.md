@@ -1,6 +1,6 @@
 # Who's Here?
 
-<whoami />
+<!-- <whoami /> -->
 
 ![me](/images/photoroll/DSCF0779.jpg)
 
