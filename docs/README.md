@@ -19,6 +19,8 @@ Code is [MIT](https://opensource.org/licenses/MIT), words are [CC BY 4.0](http:/
 
 This site came about because I spent quite a few months not working and taking care of myself and my family after a long stint in high-pressure startup-y jobs. During that time I came back to programming as a creative and intellectual outlet, rather than simply a means of making a living, and found it very much to my liking.
 
-I've come across some really great ideas in that time: dWeb tech, off-the-grid connectivity, trustworthy and resilient communications, and others. I've added a few topics of my own to that queue (more soon!) and picked up a few useful new tools in the ol' programming toolbox (mainly modern web dev using TypeScript and headless and repo-backed content stores) and scribbled a lot of notes.
+I've come across some really great ideas in that time: dWeb tech, off-the-grid connectivity, trustworthy and resilient communications, and others. I've added a few topics of my own to that queue and picked up a few useful new tools in the ol' programming toolbox[^1] and scribbled a lot of notes.
 
 I'm going to try to collect some of those links, scribblings, and unfinished bits of code into a public notebook of sorts here.
+
+[^1]: mainly TypeScript, Vue/Vuepress, and repository-backed and headless content stores
