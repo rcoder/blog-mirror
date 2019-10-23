@@ -14,6 +14,6 @@ So that's what I'm doing. It's taking a minute, though. Bear with me.
 
 ![clicv screenshot](/images/clicv.png)
 
-it's a resume, and a text-based adventure, and a bot that sends nicely-formatted emails
+Is it a resume? Is it a command-line demo? No, in the end it's just yet another fancy wrapper around `sendmail`.
 
 [live](http://cv.bc8.org/) | [code](https://github.com/rcoder/clicv)
