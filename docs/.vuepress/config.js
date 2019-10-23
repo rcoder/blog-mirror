@@ -2,7 +2,8 @@ module.exports = {
   title: 'bc8.org',
   decription: 'this is a sandbox for internet experiments',
   head: [
-    ['link', { rel: 'license', href: 'http://creativecommons.org/licenses/by/4.0/' }]
+    ['link', { rel: 'license', href: 'http://creativecommons.org/licenses/by/4.0/' }],
+    ['link', { rel: 'shortcut icon', href: '/images/logo.png' }]
   ],
   markdown: {
     lineNumbers: true,
