@@ -6,5 +6,6 @@
 
 ## Reputation and Data Ownership
 
-* [on comments](comments.md)
-* [some assumptions](assumptions.md)
+* [Portable Identity](portable-identity.md)
+* [Comments](comments.md)
+* [Assumptions](assumptions.md)

@@ -34,7 +34,8 @@ module.exports = {
     'git-log': {
       additionalArgs: '--no-merge',
       onlyFirstAndLastCommit: true
-    }
+    },
+    'mermaidjs': {},
   },
   theme: 'yuu',
   themeConfig: {
@@ -57,7 +58,7 @@ module.exports = {
       colorThemes: ['red', 'blue'],
       defaultColorTheme: 'red',
       defaultDarkTheme: true,
-      disableIgnoreTheme: true
+      disableThemeIgnore: true
     }
   }
 };
