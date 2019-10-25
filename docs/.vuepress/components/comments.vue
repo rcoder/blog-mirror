@@ -15,7 +15,6 @@
 
 <script>
 import axios from 'axios'
-import moment from 'moment'
 
 const COMMENT_BASE = 'https://bc8.org/_api/comments'
 const commentPage = (page) => `${COMMENT_BASE}/${encodeURIComponent(page.path.replace(/^\/+|\/+$/g, ''))}`
