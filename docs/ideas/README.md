@@ -9,6 +9,7 @@
 
 ## Reputation and Data Ownership
 
-* [Portable Identity](portable-identity.md)
+* [Identity](identity.md)
+* [Portable Identity and Messaging](portable-identity.md)
 * [Comments](comments.md)
 * [Assumptions](assumptions.md)

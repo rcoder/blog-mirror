@@ -1,3 +1,6 @@
+---
+type: post
+---
 # Recent B/W experiments
 
 ![kid](/images/photoroll/DSCF0752.jpg)

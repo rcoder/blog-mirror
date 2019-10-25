@@ -1,3 +1,6 @@
+---
+type: post
+---
 # Ideas: Identity
 
 We conflate identity and credentials all the time. Mostly in the _wrong_ direction: one set of credentials can gain you access to multiple identities, especially when those credentials point at an email account. Once you're locked out of those credentials, however, the identity may as well be dead. There's often no way to re-spawn a closed account, and worse yet: your choice of alias or handle is quite likely to get snapped up as idle.

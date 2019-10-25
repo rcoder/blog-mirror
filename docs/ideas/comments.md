@@ -1,3 +1,6 @@
+---
+type: post
+---
 # Ideas: Online Comments
 
 ## So What About Comments?

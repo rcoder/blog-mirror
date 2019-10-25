@@ -1,8 +1,15 @@
+---
+type: post
+---
 # Susurrus
 
 > "A soft murmuring or humming sound; a whisper; a murmur." ([Worknik](https://www.wordnik.com/words/susurrus))
 
+## tl;dr
+
 The background noise of the Internet can have a surprising amount of impact on my brain.
+
+## Finding a New Place
 
 Once, back when I was working at Twitter, I was trying to explain the import of the site to me at the time to a favorite great-aunt and I said something really trite like, "it's basically a form of low-grade telepathy for me."
 
@@ -16,7 +23,11 @@ Now that coding has come back into play I've found myself wanting a community in
 
 Even if it falls short of my old feelings of continuous background mind-meld, for now I find the end result preferable. I won't say I'm any smarter or better-informed, but my near-constant latent feelings of anxiety and panic have largely gone away, I'm able to poke at awkward bits of my own past and feelings and take the time to really wrestle with them (even when not particularly tweet-worthy), and I generally feel ready to turn on the computer in the morning without dreading what's going to scroll past my eyeballs.
 
-I'm also reminded very sharply of the series of sci-fi/horror/far-future space opera books I've been reading called the [Ian Cormac Novels](https://www.goodreads.com/book/show/98046.Gridlinked) wherein the James Bond-esque protagonist is in the very first book abruptly stripped by AI fiat of the "gridlink" which allows him instant dialogue with any AI, cyborg, AI/human-hybrid, or sufficiently-accessorized baseline human in real-time, anywhere in civilized space. The AI offers only a vague explanation about the dangers of extended gridlinking -- it's approaching 20 years continuously connected for the titular character -- and its impact on his ability to continue to "think like a human."
+## Prior Art
+
+"Simplifying", "mindfulness", and "self-care" are all very buzzword-y and trendy these days but it doesn't mean they're actually bad ideas. Taking the time to do these things has been good for me. If anyone out there is likewise feeling a bit crispy from the constant anxiety-overload, I highly recommned not so much an "Internet diet" as "slow eating" your news: i.e., plan, set limits, savor it in an ephemeral, non-attached way, and consider making your own from scratch at least occasionally.
+
+I'm also reminded somewhat sharply of the series of sci-fi/horror/far-future space opera books I've been reading called the [Ian Cormac Novels](https://www.goodreads.com/book/show/98046.Gridlinked) wherein the James Bond-esque protagonist is in the very first book abruptly stripped by AI fiat of the "gridlink" which allows him instant dialogue with any AI, cyborg, AI/human-hybrid, or sufficiently-accessorized baseline human in real-time, anywhere in civilized space. The AI offers only a vague explanation about the dangers of extended gridlinking -- it's approaching 20 years continuously connected for the titular character -- and its impact on his ability to continue to "think like a human."
 
 I currently feel a bit like that character: slightly hurt and bent out of shape by the imposition, but quietly grateful at the probability that I've narrowly avoided a rather untested reworking of my brain into something not-quite-human.
 
@@ -24,5 +35,7 @@ What does this have to do with this website, and it's rambling poking around ide
 
 * This site isn't structured like a "blog" in the traditional reverse-chronologically-ordered, publish-or-die model, which is very intentional.
 * I feel an acute need to keep working to create at least some of the spaces so essential to human communication, organization, and shared work outside of the control of from growth-optimizing captialist enterprises.[^1] It's somewhere between curiosity and a desire to do penance for whatever small part I played in making addictive software products more effective and "engaging" through direct and indirect work.
+
+So that's yet another reason why I'm publishing a very old-fashioned personal website for no obvious immediate gain in the year 2019.
 
 [^1]: Modern corporations are a particularly aggressive economically-evolved organism whose selfish goals (not unlike those of a living, DNA-carrying species) are to support and benefit others only so long as they can be of service in their own expansion, reproduction, and eating and elimination. They also serve an incredibly valuable role (again, like many naturally-evolved creatures) in carrying large loads of useful resources from one place to another, protecting their wards, and developing useful strategies for making attractive crafts, durable goods, and safe shelters with ever-better materials and methods. In my best possible imagining of our [grim meathook future](https://www.jwz.org/blog/2005/09/the-grim-meathook-future/) I think we can look forward to us evolving, Canidae-like, to be better household pets and companions to our mostly-beneficent monorepo quantum-AI masters.

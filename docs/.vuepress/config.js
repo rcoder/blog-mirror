@@ -36,6 +36,9 @@ module.exports = {
       onlyFirstAndLastCommit: true
     },
     'mermaidjs': {},
+    'feed': {
+      canonical_base: 'https://bc8.org'
+    }
   },
   theme: 'yuu',
   themeConfig: {
@@ -44,6 +47,10 @@ module.exports = {
     lastUpdated: 'updated at',
     search: true,
     nav: [
+      {
+        text: 'Feed',
+        link: 'https://bc8.org/feed.atom'
+      },
       {
         text: 'Home',
         link: '/'

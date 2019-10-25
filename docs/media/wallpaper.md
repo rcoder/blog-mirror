@@ -1,3 +1,6 @@
+---
+type: post
+---
 # Wallpaper
 
 Because sometimes I like to look at nature when I'm sitting indoors using a computer.

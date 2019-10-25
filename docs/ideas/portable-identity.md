@@ -1,3 +1,6 @@
+---
+type: post
+---
 # Messaging With Portable Identity
 
 ## Credential Creation
