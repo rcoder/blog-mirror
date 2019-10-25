@@ -11,8 +11,8 @@
       </thead>
       <tbody>
         <tr v-for="page in topK">
-          <td>{{ page[0].split(' ')[1] }}</td>
-          <td>{{ page[1] }}</td>
+          <td><a :href="page.url">{{ page.url }}</a></td>
+          <td>{{ page.count }}</td>
         </tr>
       </tbody>
     </table>
@@ -24,7 +24,10 @@ import topK from '../../../logs/topK.json'
 
 export default {
   data: () => ({
-    topK: topK
+    topK: topK.map(pair => ({
+      url: pair[0].split(' ')[1],
+      count: pair[1]
+    }))
   })
 }
 </script>
