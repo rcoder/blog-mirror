@@ -1,5 +1,8 @@
 # Ideas
 
+## Meta
+* [Susurrus](susurrus.md)
+
 ## Interfaces
 
 * text is important <Badge type="warn">coming soon!</Badge>
