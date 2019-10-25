@@ -31,6 +31,7 @@
     "typescript": "^3.6.4",
     "vuepress": "^1.2.0",
     "vuepress-plugin-container": "^2.1.0",
+    "vuepress-plugin-feed": "^0.1.7",
     "vuepress-plugin-git-log": "^1.0.1",
     "vuepress-theme-yuu": "^2.2.0"
   }
