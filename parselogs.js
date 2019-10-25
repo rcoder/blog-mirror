@@ -3,9 +3,9 @@ const fs = require('fs')
 const stream = require('stream')
 
 // max # of pages to emit stats about
-const pageLimit = 50
+const pageLimit = 20
 
-const ignorePat = /^GET \/assets/
+const ignorePat = /^GET \/(assets|stats)/
 
 let input = fs.createReadStream('logs/access.log')
 let logObjects = input.pipe(new logparser())

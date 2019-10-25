@@ -48,12 +48,16 @@ module.exports = {
     search: true,
     nav: [
       {
+        text: 'Home',
+        link: '/'
+      },
+      {
         text: 'Feed',
         link: 'https://bc8.org/feed.atom'
       },
       {
-        text: 'Home',
-        link: '/'
+        text: 'Stats',
+        link: '/stats'
       },
       {
         text: "Who's Here?",
