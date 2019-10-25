@@ -37,7 +37,3 @@ Et voila! Offline-capable, self-updating, searchable searchable HOWTO + API docs
 Is it a resume? Is it a command-line demo? No, in the end it's just yet another fancy wrapper around `sendmail`.
 
 [live](http://cv.bc8.org/) | [code](https://github.com/rcoder/clicv)
-
-## Comments
-
-<comments />
