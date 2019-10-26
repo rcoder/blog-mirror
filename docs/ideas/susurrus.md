@@ -3,7 +3,7 @@ type: post
 ---
 # Susurrus
 
-> "A soft murmuring or humming sound; a whisper; a murmur." ([Worknik](https://www.wordnik.com/words/susurrus))
+> "A soft murmuring or humming sound; a whisper; a murmur." ([Wordnik](https://www.wordnik.com/words/susurrus))
 
 ## tl;dr
 
@@ -38,4 +38,4 @@ What does this have to do with this website, and it's rambling poking around ide
 
 So that's yet another reason why I'm publishing a very old-fashioned personal website for no obvious immediate gain in the year 2019.
 
-[^1]: Modern corporations are a particularly aggressive economically-evolved organism whose selfish goals (not unlike those of a living, DNA-carrying species) are to support and benefit others only so long as they can be of service in their own expansion, reproduction, and eating and elimination. They also serve an incredibly valuable role (again, like many naturally-evolved creatures) in carrying large loads of useful resources from one place to another, protecting their wards, and developing useful strategies for making attractive crafts, durable goods, and safe shelters with ever-better materials and methods. In my best possible imagining of our [grim meathook future](https://www.jwz.org/blog/2005/09/the-grim-meathook-future/) I think we can look forward to us evolving, Canidae-like, to be better household pets and companions to our mostly-beneficent monorepo quantum-AI masters.
+[^1]: Modern corporations are a particularly aggressive economically-evolved organism whose selfish goals (not unlike those of a living, DNA-carrying species) are to support and benefit others only so long as they can be of service in their own expansion, reproduction, and eating and elimination. They also serve an incredibly valuable role (again, like many naturally-evolved creatures) in carrying large loads of useful resources from one place to another, protecting their wards, and developing useful strategies for making attractive crafts, durable goods, and safe shelters with ever-better materials and methods. In my best possible imagining of our [grim meathook future](https://www.jwz.org/blog/2005/09/the-grim-meathook-future/) I think we can look forward to us evolving, Canidae-like, to be better household pets and companions to our mostly-beneficent monorepo-spawned quantum-AI masters.
