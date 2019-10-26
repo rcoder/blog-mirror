@@ -41,14 +41,14 @@ pages.ensureIndex({
   expireAfterSeconds: PAGE_ACTIVITY_TTL
 } as any)
 
-server.route({
-  method: 'GET',
-  url: '/comments/:path',
-  handler: async (req, reply) => {
+server.get('/comments/:path', async (req, reply) => {
     let path = cleanPath(req.params.path)
-    let results = await comments.find({path}).sort({createdAt: -1}).limit(50).exec()
-    server.log.debug('comments')
-    server.log.debug(results)
+    let results = await comments
+      .find({path})
+      .sort({createdAt: -1})
+      .limit(50)
+      .exec()
+    
     reply.send(results)
   }
 })
