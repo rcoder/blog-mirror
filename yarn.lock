@@ -3772,6 +3772,11 @@ flatstr@^1.0.12, flatstr@^1.0.9:
   resolved "https://registry.yarnpkg.com/flatstr/-/flatstr-1.0.12.tgz#c2ba6a08173edbb6c9640e3055b95e287ceb5931"
   integrity sha512-4zPxDyhCyiN2wIAtSLI6gc82/EjqZc1onI4Mz/l0pWrAlsSfYH/2ZIcU+e3oA2wDwbzIWNKwa23F8rh6+DRWkw==
 
+fluent-schema@^0.7.5:
+  version "0.7.5"
+  resolved "https://registry.yarnpkg.com/fluent-schema/-/fluent-schema-0.7.5.tgz#035e682b8416c232a5ab80806e7000d5fbebf5c6"
+  integrity sha512-skOIYHcbGmZxPcXhzX2qhSdu92dh6BfrhylKO5KQUB24Qc2vSjibGRji88mVaprqXHiMDWyOyTPh+GLNH0Agaw==
+
 flush-write-stream@^1.0.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/flush-write-stream/-/flush-write-stream-1.1.1.tgz#8dd7d873a1babc207d94ead0c2e0e44276ebf2e8"

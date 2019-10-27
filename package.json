@@ -27,6 +27,7 @@
     "fastify": "^2.10.0",
     "fastify-cors": "^2.1.3",
     "fastify-sse": "^0.1.5",
+    "fluent-schema": "^0.7.5",
     "js-yaml": "^3.13.1",
     "markdown-it-container": "^2.0.0",
     "markdown-it-emoji": "^1.4.0",

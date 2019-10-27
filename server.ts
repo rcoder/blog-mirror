@@ -1,13 +1,12 @@
 import fastify from 'fastify'
 import cors from 'fastify-cors'
 import nedb from 'nedb-promises'
+import S from 'fluent-schema'
 
 import path from 'path'
 
 const server = fastify({
-  logger: {
-    level: 'debug'
-  }
+  logger: { level: 'debug' }
 })
 
 server.register(cors, { origin: '*' })
@@ -27,70 +26,63 @@ function cleanPath(path: string) {
   return decodeURIComponent(path).replace(/^\/+|\/+$/g, '')
 }
 
-const comments = openDb('comments')
+const $comments = openDb('comments')
+const $presence = openDb('presence')
+const $activity = openDb('activity')
 
-const presence = openDb('presence')
-presence.ensureIndex({
+$presence.ensureIndex({
   fieldName: 'updatedAt',
   expireAfterSeconds: PRESENCE_TTL
 } as any)
 
-const pages = openDb('activity')
-pages.ensureIndex({
+$activity.ensureIndex({
   fieldName: 'updatedAt',
   expireAfterSeconds: PAGE_ACTIVITY_TTL
 } as any)
 
 server.get('/comments/:path', async (req, reply) => {
-    let path = cleanPath(req.params.path)
-    let results = await comments
-      .find({path})
-      .sort({createdAt: -1})
-      .limit(50)
-      .exec()
-    
-    reply.send(results)
-  }
+  let path = cleanPath(req.params.path)
+  let results = await $comments
+    .find({path})
+    .sort({createdAt: -1})
+    .limit(50)
+    .exec()
+  
+  reply.send(results)
 })
 
-server.route({
-  method: 'POST',
-  url: '/comments/:path',
-  handler: async (req, reply) => {
-    let path = cleanPath(req.params.path)
+server.post('/comments/:path', {
+  schema: {
+    body: S.object()
+      .prop('path', S.string().required().maxLength(150))
+      .prop('from', S.string().maxLength(150))
+      .prop('key', S.string().maxLength(50))
+      .prop('message', S.string().required().maxLength(500))
+  },
+}, async (req, reply) => {
+  let path = cleanPath(req.params.path)
 
-    await pages.update({path}, {lastCommentAt: new Date()}, {upsert: true})
-    await comments.insert({
-      path: path,
-      ...req.body
-    })
-    reply.send(await comments.find({path}))
-  }
+  await $activity.update({path}, {lastCommentAt: new Date()}, {upsert: true})
+  await $comments.insert({
+    path: path,
+    ...req.body
+  })
+  reply.send(await $comments.find({path}))
 })
 
-server.route({
-  method: 'GET',
-  url: '/presence',
-  handler: async (req, reply) => {
-    reply.send(await presence.find({}))
-  }
+server.get('/presence', async (req, reply) => {
+  reply.send(await $presence.find({}))
 })
 
-server.route({
-  method: 'POST',
-  url: '/presence',
-  handler: async (req, reply) => {
-    let updated = await presence.update(
-      {
-        alias: req.body.alias,
-        path: req.body.path
-      },
-      req.body,
-      {
-        upsert: true
-    })
-    reply.send(updated)
+server.post('/presence', {
+  schema: {
+    body: S.object()
+      .prop('alias', S.string().required().maxLength(150))
+      .prop('key', S.string().maxLength(150))
   }
+}, async (req, reply) => {
+  let updated = await $presence.update(req.body, req.body, { upsert: true })
+  reply.send(updated)
 })
 
 server.listen(process.env.PORT ? parseInt(process.env.PORT) : 8081)

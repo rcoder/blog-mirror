@@ -53,11 +53,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var fastify_1 = __importDefault(require("fastify"));
 var fastify_cors_1 = __importDefault(require("fastify-cors"));
 var nedb_promises_1 = __importDefault(require("nedb-promises"));
+var fluent_schema_1 = __importDefault(require("fluent-schema"));
 var path_1 = __importDefault(require("path"));
 var server = fastify_1.default({
-    logger: {
-        level: 'debug'
-    }
+    logger: { level: 'debug' }
 });
 server.register(fastify_cors_1.default, { origin: '*' });
 var PRESENCE_TTL = 600;
@@ -72,97 +71,92 @@ function openDb(name) {
 function cleanPath(path) {
     return decodeURIComponent(path).replace(/^\/+|\/+$/g, '');
 }
-var comments = openDb('comments');
-var presence = openDb('presence');
-presence.ensureIndex({
+var $comments = openDb('comments');
+var $presence = openDb('presence');
+var $activity = openDb('activity');
+$presence.ensureIndex({
     fieldName: 'updatedAt',
     expireAfterSeconds: PRESENCE_TTL
 });
-var pages = openDb('activity');
-pages.ensureIndex({
+$activity.ensureIndex({
     fieldName: 'updatedAt',
     expireAfterSeconds: PAGE_ACTIVITY_TTL
 });
-server.route({
-    method: 'GET',
-    url: '/comments/:path',
-    handler: function (req, reply) { return __awaiter(void 0, void 0, void 0, function () {
-        var path, results;
-        return __generator(this, function (_a) {
-            switch (_a.label) {
-                case 0:
-                    path = cleanPath(req.params.path);
-                    return [4 /*yield*/, comments.find({ path: path }).sort({ createdAt: -1 }).limit(50).exec()];
-                case 1:
-                    results = _a.sent();
-                    server.log.debug('comments');
-                    server.log.debug(results);
-                    reply.send(results);
-                    return [2 /*return*/];
-            }
-        });
-    }); }
-});
-server.route({
-    method: 'POST',
-    url: '/comments/:path',
-    handler: function (req, reply) { return __awaiter(void 0, void 0, void 0, function () {
-        var path, _a, _b;
-        return __generator(this, function (_c) {
-            switch (_c.label) {
-                case 0:
-                    path = cleanPath(req.params.path);
-                    return [4 /*yield*/, pages.update({ path: path }, { lastCommentAt: new Date() }, { upsert: true })];
-                case 1:
-                    _c.sent();
-                    return [4 /*yield*/, comments.insert(__assign({ path: path }, req.body))];
-                case 2:
-                    _c.sent();
-                    _b = (_a = reply).send;
-                    return [4 /*yield*/, comments.find({ path: path })];
-                case 3:
-                    _b.apply(_a, [_c.sent()]);
-                    return [2 /*return*/];
-            }
-        });
-    }); }
-});
-server.route({
-    method: 'GET',
-    url: '/presence',
-    handler: function (req, reply) { return __awaiter(void 0, void 0, void 0, function () {
-        var _a, _b;
-        return __generator(this, function (_c) {
-            switch (_c.label) {
-                case 0:
-                    _b = (_a = reply).send;
-                    return [4 /*yield*/, presence.find({})];
-                case 1:
-                    _b.apply(_a, [_c.sent()]);
-                    return [2 /*return*/];
-            }
-        });
-    }); }
-});
-server.route({
-    method: 'POST',
-    url: '/presence',
-    handler: function (req, reply) { return __awaiter(void 0, void 0, void 0, function () {
-        var updated;
-        return __generator(this, function (_a) {
-            switch (_a.label) {
-                case 0: return [4 /*yield*/, presence.update({
-                        alias: req.body.alias,
-                        path: req.body.path
-                    }, req.body, {
-                        upsert: true
-                    })];
-                case 1:
-                    updated = _a.sent();
-                    reply.send(updated);
-                    return [2 /*return*/];
-            }
-        });
-    }); }
-});
+server.get('/comments/:path', function (req, reply) { return __awaiter(void 0, void 0, void 0, function () {
+    var path, results;
+    return __generator(this, function (_a) {
+        switch (_a.label) {
+            case 0:
+                path = cleanPath(req.params.path);
+                return [4 /*yield*/, $comments
+                        .find({ path: path })
+                        .sort({ createdAt: -1 })
+                        .limit(50)
+                        .exec()];
+            case 1:
+                results = _a.sent();
+                reply.send(results);
+                return [2 /*return*/];
+        }
+    });
+}); });
+server.post('/comments/:path', {
+    schema: {
+        body: fluent_schema_1.default.object()
+            .prop('path', fluent_schema_1.default.string().required().maxLength(150))
+            .prop('from', fluent_schema_1.default.string().maxLength(150))
+            .prop('key', fluent_schema_1.default.string().maxLength(50))
+            .prop('message', fluent_schema_1.default.string().required().maxLength(500))
+    },
+}, function (req, reply) { return __awaiter(void 0, void 0, void 0, function () {
+    var path, _a, _b;
+    return __generator(this, function (_c) {
+        switch (_c.label) {
+            case 0:
+                path = cleanPath(req.params.path);
+                return [4 /*yield*/, $activity.update({ path: path }, { lastCommentAt: new Date() }, { upsert: true })];
+            case 1:
+                _c.sent();
+                return [4 /*yield*/, $comments.insert(__assign({ path: path }, req.body))];
+            case 2:
+                _c.sent();
+                _b = (_a = reply).send;
+                return [4 /*yield*/, $comments.find({ path: path })];
+            case 3:
+                _b.apply(_a, [_c.sent()]);
+                return [2 /*return*/];
+        }
+    });
+}); });
+server.get('/presence', function (req, reply) { return __awaiter(void 0, void 0, void 0, function () {
+    var _a, _b;
+    return __generator(this, function (_c) {
+        switch (_c.label) {
+            case 0:
+                _b = (_a = reply).send;
+                return [4 /*yield*/, $presence.find({})];
+            case 1:
+                _b.apply(_a, [_c.sent()]);
+                return [2 /*return*/];
+        }
+    });
+}); });
+server.post('/presence', {
+    schema: {
+        body: fluent_schema_1.default.object()
+            .prop('alias', fluent_schema_1.default.string().required().maxLength(150))
+            .prop('key', fluent_schema_1.default.string().maxLength(150))
+    }
+}, function (req, reply) { return __awaiter(void 0, void 0, void 0, function () {
+    var updated;
+    return __generator(this, function (_a) {
+        switch (_a.label) {
+            case 0: return [4 /*yield*/, $presence.update(req.body, req.body, { upsert: true })];
+            case 1:
+                updated = _a.sent();
+                reply.send(updated);
+                return [2 /*return*/];
+        }
+    });
+}); });
 server.listen(process.env.PORT ? parseInt(process.env.PORT) : 8081);
