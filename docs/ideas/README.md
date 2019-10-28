@@ -5,7 +5,7 @@
 
 ## Interfaces
 
-* text is important <Badge type="warn">coming soon!</Badge>
+* [Text is Important, Part 1](text-1.md) (...part one of ???)
 
 ## Reputation and Data Ownership
 

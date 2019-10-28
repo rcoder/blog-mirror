@@ -56,10 +56,6 @@ module.exports = {
         link: 'https://bc8.org/feed.atom'
       },
       {
-        text: 'Stats',
-        link: '/stats'
-      },
-      {
         text: "Who's Here?",
         link: '/who/'
       }
