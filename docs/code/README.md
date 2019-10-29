@@ -3,7 +3,6 @@ type: post
 ---
 # Code
 
-![workspace](/images/photoroll/DSCF0796.jpg)
 :fire: :computer: :fire:
 
 [This site's code](https://github.com/rcoder/blog-mirror) is [MIT](https://opensource.org/licenses/MIT), words and images are [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/). Enjoy!
