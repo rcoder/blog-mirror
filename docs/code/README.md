@@ -3,6 +3,7 @@ type: post
 ---
 # Code
 
+![workspace](/images/photoroll/DSCF0796.jpg)
 :fire: :computer: :fire:
 
 [This site's code](https://github.com/rcoder/blog-mirror) is [MIT](https://opensource.org/licenses/MIT), words and images are [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/). Enjoy!
@@ -18,7 +19,7 @@ These are command-line hacks, reusable chunks of code not quite worth packaging 
 ### Take Your Dev Docs With You
 
 ```sh
-$ yarn global install natifefier
+$ yarn global install nativefier
 # ...lots of package install chunder...
 $ nativefier https://devdocs.io/
 # build chunder, then you get a directory like `
