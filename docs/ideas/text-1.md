@@ -1,3 +1,6 @@
+---
+type: post
+---
 # Text is Important, Part 1
 
 I'm writing this document using what is by any objective measure an absurd mix of technologies.

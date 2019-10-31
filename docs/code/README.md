@@ -11,6 +11,10 @@ You can't have a distributed web without lots of little satellite sites hosting 
 
 So that's what I'm doing. It's taking a minute, though. Bear with me.
 
+## :cloud: [My "Private Cloud"](private-cloud.md)
+
+I like running servers so much I have a bunch of 'em on computers at home. Here's how they're wired up.
+
 ## :clipboard: Snippets
 
 These are command-line hacks, reusable chunks of code not quite worth packaging up as a library, and cool bits of syntax lurking out there in PLT-land.
