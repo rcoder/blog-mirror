@@ -2,6 +2,7 @@
 type: page
 sidebar: false
 ---
+
 # Chapter 1
 
 > Location: Coast Highway, 40km North of San Francisco City
