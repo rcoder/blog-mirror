@@ -5,7 +5,7 @@ tagline: "A Sandbox for Personal Internet Experiments"
 
 footer: made with ♥ in pdx
 ---
-## Start Here: [Ideas](ideas), [Code](code), [Media](media)
+## Start Here: [Ideas](ideas), [Code](code), [Fiction](fiction), [Media](media)
 
 ## About
 
