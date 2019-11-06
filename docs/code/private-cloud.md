@@ -30,7 +30,7 @@ I can "fork" a virtual machine by copying its disk image to a new path, cloning 
 
 (this is roughly 100GB of disk de-duped across the running VMs)
 
-Right now, that means I'm using 6GB of RAM and about 25GB of disk to run the host OS and a couple of fairly beefy (8GB RAM + 4-core virtual CPU) build + database guests with the system idling at about 5% CPU usage during a full background network filesystem sync. When I'm compiling, installing software, or running some giant query that VM can hit very high CPU utilization but its RAM usage gets capped by qemu+kvm. Linux is generally pretty happy IME when CPU-starved but has healthy headroom on RAM and disk-I/O capacity.[^2]
+Right now, that means I'm using 6GB of RAM and about 25GB of disk to run the host OS and a couple of fairly beefy (8GB RAM + 4-core virtual CPU) build + database guests with the system idling at about 5% CPU usage during a full background network filesystem sync. When I'm compiling, installing software, or running some giant query that VM can hit very high CPU utilization but its RAM usage gets capped by Qemu/KVM. The hypervisor kernel seems to stay pretty happy when CPU-starved but maintaining a good slice of RAM and disk-I/O headroom.[^2]
 
 The host machine has 32GB of RAM and a couple of terabytes of storage, but it was built as a gaming machine, not a server. Checkpointing and forking VMs is a useful defense for me against arbitrary shutdowns, bad OS upgrades, etc., and makes it trivial to do things like testing out some random self-hosted server package that wants to spew startup scripts and configuration all over my system disk.
 
@@ -38,7 +38,7 @@ Once a VM is running, VS Code will happily connect to it via SSH and give me bas
 
 ![remote](/images/remote-editor.png)
 
-The [sshcode](https://github.com/cdr/sshcode) project gives me the ability to tunnel directly to the devbox from an arbitrary host, too, so when I'm stuck with my iPad or some broken old laptop as my only client to connect from I can still get stuff done.
+The [sshcode](https://github.com/cdr/sshcode) project gives me the ability to tunnel directly to the devbox from an arbitrary host, too, so when I'm stuck with my tablet or some semi-broken old laptop as my only client to connect from I can still get stuff done. [Cockpit](https://cockpit-project.org/) gives me a nice dashboard when I can't easily pull up an X11 tunnel for GUI access to the host box.
 
 On the downside, this makes the machines kind of "pets" in the classic ops "cattle, not pets" sense. _Yes_ I can re-build the image if I want to, but I haven't (yet) scripted the provisioning. _(Hello, Packer. We'll play again soon.)_
 

@@ -14,8 +14,9 @@ let counts = {}
 
 logObjects.on('data', (chunk) => {
   let logLine = JSON.parse(chunk)
-  if (!ignorePat.test(logLine.request) && logLine.status < 300) {
-    counts[logLine.request] = (counts[logLine.request] || 0) + 1
+  let path = logLine.request.replace(/\s+/, '')
+  if (!ignorePat.test(path) && logLine.status < 300) {
+    counts[path] = (counts[path] || 0) + 1
   }
 })
 

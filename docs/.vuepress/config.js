@@ -60,7 +60,7 @@ module.exports = {
         link: '/who/'
       }
     ],
-    sidebar: ['/', '/ideas/', '/code/', '/media/'],
+    sidebar: ['/', '/ideas/', '/code/', '/fiction/', '/media/'],
     yuu: {
       colorThemes: ['red', 'blue'],
       defaultColorTheme: 'red',
