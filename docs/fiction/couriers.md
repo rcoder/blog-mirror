@@ -28,7 +28,23 @@ Unsurprisingly, K decided to bag it in early too and joined me just as my slate'
 
 We settled into what had become an easy camp routine: I fired up the biofuel stove and started heating the kettle for tea; he did a quick forage of the woods near our camp and scored a few fresh Chanterelles to add to our reheated rice and veggies. We were eating everything we could that contained its own water at this point to avoid hauling heavy perishables into the city where they'd be cheap and easy to replenish.
 
-After dinner as the light started failing we were settling in to our hammocks for the night when something growled and snapped some branches on the ground nearby. Next thing I knew, K was out of his hammock and hauling ass behind the tree closest to where his toes had been after picking up his backpack from the ground below him.
+After dinner as the light started failing we were settling in to our hammocks for the night when something snuffled loudly and snapped some branches on the ground nearby. Next thing I knew, K was out of his hammock and hauling ass behind the tree closest to where his toes had been after picking up his backpack from the ground below him.
+
+Next thing I knew, a blindingly-bright light caught a young elk buck sniffing around the dishwater residue we had left on a small rockpile just down the trail from our campsite. I followed the light back to where K was still mostly behind the cover of his chosen tree trunk, with a long shiny chrome barrel extending in the direction of the buck aligned perfectly with the flashlight beam, two-handed tactical hold and all.
+
+I'm not a total city boy; I've been around guns before, and seen them deployed for hunting, practice, and even sport shooting when a circus or rodeo came through the area. That being said, I've never hauled myself out of a hammock in the middle of nowhere in the wee hours of the morning to be confronted with a large handgun and unknown external threats, so my heart rate was basically pegged and I felt ready to run the rest of the way to SF barefoot in the dark to get away from _whatever_ was causing this freak-out.
+
+In a couple of seconds that felt like slow minutes the elk blinked, started once, and then turned to run back into the dense forest ground cover and away from the unwanted brightness and attention.
+
+The light clicked off, and I found myself shaking a bit, coming very quickly to full alertness as I blinked away bright after-images and considered whether to follow the animal's lead and just run off into the brush.
+
+"Sorry about that. Old habits die hard, and all that." muttered K as I saw him slip the gun and light back into his pack and climb into his hammock.
+
+I decided to bluff my way through and pretend I wasn't scared shitless. Trying very hard to keep my voice from noticeably shaking, I replied, "...sure, I get you. Good reflexes, regardless. Good thing it wasn't a more threatening animal; we'd both be logging a long outdoor kill report when we got back to the city and I'm gonna have enough shit to deal with as it is."
+
+K barked a quick laugh in reply. "Bah! Hardly. That little pea-shooter is mostly for intimidating people; it _looks_ huge but only fires little bitty bullets. I've only ever taken down squirrels and rabbits with it, honestly."
+
+I wasn't entirely convinced, as his quick reactions didn't seem entirely in line with simple wilderness survival needs. (I, for example, had never had the alertness in the middle of the night to smoothly roll out of bed and get the drop on an unexpected intruder, but to each their own.) I wasn't about to antogonize my unexpectedly-well-armed camp buddy, though, so I let it drop and slowly fell back to a fitful sleep some time after I heard K gently snoring from his hammock.
 
 [^1]: My lights hit the full range from 400-700nm every second with intensity going up and down out-of-phase at 1/2-speed, but never losing the high-intensity core elements that decode quickly to my primary working public key. If you can ignore them, your eyes (mushy and water-filled or made of high-speed CMOS detectors) need to be checked. We don't take stupid chances on the open highway, beyond the stupid chance of being there in the first place.
 
