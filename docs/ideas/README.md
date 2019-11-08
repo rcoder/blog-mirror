@@ -3,6 +3,7 @@
 ## Meta
 
 * [Susurrus](susurrus.md)
+* [PTLI](ptli.md) &lt;- a sample 'About' page for a website I might build some day, showing all the crazy stuff that I feel like I have to define before I start writing code for anything with actual _users_ or _content_ to worry about. (Our industry is weird!)
 
 ## Interfaces
 
