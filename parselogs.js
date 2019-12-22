@@ -5,7 +5,7 @@ const stream = require('stream')
 // max # of pages to emit stats about
 const pageLimit = 20
 
-const ignorePat = /^GET \/(assets|stats|images\/logo)/
+const ignorePat = /^GET (https?\:\/\/|\/assets|\/stats|\/images\/logo)/
 
 let input = fs.createReadStream('logs/access.log')
 let logObjects = input.pipe(new logparser())
@@ -14,7 +14,7 @@ let counts = {}
 
 logObjects.on('data', (chunk) => {
   let logLine = JSON.parse(chunk)
-  let path = logLine.request.replace(/\s+/, '')
+  let path = logLine.request.replace(/\s+/, ' ')
   if (!ignorePat.test(path) && logLine.status < 300) {
     counts[path] = (counts[path] || 0) + 1
   }
@@ -27,7 +27,7 @@ output.on('finish', () => {
   let topK = []
 
   for (let req in counts) {
-    topK.push([req, counts[req]])
+    topK.push([req.split(' ')[1], counts[req]])
   }
   
   topK.sort((a, b) => (b[1] - a[1]))

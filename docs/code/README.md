@@ -11,6 +11,12 @@ You can't have a distributed web without lots of little satellite sites hosting 
 
 So that's what I'm doing. It's taking a minute, though. Bear with me.
 
+## Linux (and other open source OSes) on weird machines
+
+I like having a UNIX-ey command line on any computing device I interact with on a regular basis. That means there are a lot of single-board computers, old/weird mobile hardware, and virtual machines with somewhat odd configurations floating around my house. I've collected notes on some of the installs, what it's like to work with the system in question, etc.
+
+[Linux on the Pinebook Pro](pbp.md)
+
 ## :sparkles: [qmirror](qmirror.md)
 
 MQTT + Dat == crazy delicious?
