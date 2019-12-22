@@ -25,7 +25,7 @@ import topK from '../../../logs/topK.json'
 export default {
   data: () => ({
     topK: topK.map(pair => ({
-      url: pair[0].split(' ')[1],
+      url: pair[0],
       count: pair[1]
     }))
   })
